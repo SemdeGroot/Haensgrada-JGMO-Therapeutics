@@ -8,16 +8,16 @@ body {
     color: #333;
 }
 
-/* ===== Warning Banner ===== */
+/* ===== Fix: Warning Banner (Now Scrolls Away) ===== */
 .warning-banner {
-    background-color: #d9534f; /* Red alert color */
+    background-color: #d9534f; 
     color: white;
     text-align: center;
     font-weight: bold;
     padding: 10px 15px;
     font-size: 1em;
-    width: 100%; 
-    box-sizing: border-box; 
+    width: 100%;
+    box-sizing: border-box;
     position: relative; 
 }
 
@@ -35,7 +35,6 @@ body {
         padding: 8px;
     }
 }
-
 
 /* ===== Header Styling ===== */
 header {
@@ -74,7 +73,7 @@ h1 {
     border-radius: 5px;
 }
 
-
+/* Fix: Remove Default Bullet Points */
 .hae-symptoms, .haensgrada-benefits {
     list-style: none;
     padding: 0;
@@ -124,12 +123,13 @@ footer {
     }
 }
 
+/* ===== Fix: Prevent Horizontal Scrolling ===== */
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
-
+/* Fix: Ensure All Sections Stay Within Width */
 .container {
     max-width: 100%;
     margin: 0 auto;
@@ -137,15 +137,7 @@ html, body {
     box-sizing: border-box;
 }
 
-
-.warning-banner {
-    width: 100%; 
-    box-sizing: border-box; 
-    padding: 10px 15px;
-}
-
 .info-section, .contact-section, header {
     max-width: 100%;
     box-sizing: border-box;
 }
-
