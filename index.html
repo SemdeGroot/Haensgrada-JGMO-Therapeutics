@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Website</title>
+    <title>Haensgrada for HAE Prophylaxis</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1 id="message">Hello, World!</h1>
-    <button id="changeText">Verander tekst</button>
+
+    <header>
+        <div class="container">
+            <h1>Haensgrada - Protection Against HAE Attacks</h1>
+            <p>Innovative prophylactic therapy for patients with Hereditary Angioedema.</p>
+            <a href="#more-info" class="cta-button">Learn More</a>
+        </div>
+    </header>
+
+    <section id="more-info" class="info-section">
+        <div class="container">
+            <h2>What is Haensgrada?</h2>
+            <p>Haensgrada is a recombinant C1-esterase inhibitor designed to prevent HAE attacks and improve patients' quality of life.</p>
+            <ul>
+                <li>✔ Clinically proven effectiveness</li>
+                <li>✔ Subcutaneous administration for easy application</li>
+                <li>✔ Long-term protection against HAE attacks</li>
+            </ul>
+            <a href="#contact" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Do you have questions or want more information about Haensgrada?</p>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p id="formMessage"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 JGMO Therapeutics. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="js/script.js"></script>
+
 </body>
 </html>
