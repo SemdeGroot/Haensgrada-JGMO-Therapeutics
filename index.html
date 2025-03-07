@@ -3,43 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haensgrada for HAE Prophylaxis</title>
+    <title>Haensgrada - Protection Against HAE</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
 
+    <!-- Warning Banner -->
+    <div class="warning-banner">
+        ⚠️ <strong>DISCLAIMER:</strong> This website is part of a school project and does not represent a real medical treatment. Haensgrada is not an actual drug.
+    </div>
+
     <header>
         <div class="container">
-            <h1>Haensgrada - Protection Against HAE Attacks</h1>
-            <p>Innovative prophylactic therapy for patients with Hereditary Angioedema.</p>
-            <a href="#more-info" class="cta-button">Learn More</a>
+            <h1>Haensgrada - The Future of HAE Prophylaxis</h1>
+            <p>A groundbreaking solution for preventing Hereditary Angioedema attacks.</p>
+            <a href="#hae-info" class="cta-button">Learn More</a>
         </div>
     </header>
 
-    <section id="more-info" class="info-section">
+    <section id="hae-info" class="info-section" data-aos="fade-up">
         <div class="container">
-            <h2>What is Haensgrada?</h2>
-            <p>Haensgrada is a recombinant C1-esterase inhibitor designed to prevent HAE attacks and improve patients' quality of life.</p>
-            <ul>
-                <li>✔ Clinically proven effectiveness</li>
-                <li>✔ Subcutaneous administration for easy application</li>
-                <li>✔ Long-term protection against HAE attacks</li>
+            <h2>What is Hereditary Angioedema (HAE)?</h2>
+            <p>Hereditary Angioedema (HAE) is a rare genetic disorder that causes unpredictable and severe swelling in different parts of the body. Without treatment, these attacks can lead to significant pain, discomfort, and in some cases, life-threatening airway obstruction.</p>
+            <h3>Common Symptoms of HAE Attacks:</h3>
+            <ul class="hae-symptoms">
+                <li>⚠️ Severe swelling in the abdomen, limbs, face, or throat</li>
+                <li>⚠️ Unpredictable and recurring attacks</li>
+                <li>⚠️ Abdominal pain, nausea, and vomiting</li>
+                <li>⚠️ Potential airway obstruction, requiring emergency intervention</li>
             </ul>
-            <a href="#contact" class="cta-button">Contact Us</a>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
+    <section id="about-haensgrada" class="info-section" data-aos="fade-right">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>Do you have questions or want more information about Haensgrada?</p>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-            <p id="formMessage"></p>
+            <h2>Meet Haensgrada</h2>
+            <p>Haensgrada is an innovative recombinant C1-esterase inhibitor (rh-C1INH) designed to provide long-term prevention of HAE attacks.</p>
+            <h3>Why Choose Haensgrada?</h3>
+            <ul class="haensgrada-benefits">
+                <li>✅ Clinically tested for safety and efficacy</li>
+                <li>✅ Subcutaneous administration for easy and convenient use</li>
+                <li>✅ Reduces the frequency and severity of HAE attacks</li>
+            </ul>
         </div>
     </section>
 
@@ -50,6 +58,10 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

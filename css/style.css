@@ -1,11 +1,12 @@
-/* General Styles */
+/* ===== Global Styles ===== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #f4f4f4;
     color: #333;
+    padding-top: 60px; /* Ensures content is not hidden under warning banner */
 }
 
 .container {
@@ -14,33 +15,52 @@ body {
     padding: 20px;
 }
 
-/* Header Styling */
-header {
-    background: #007bff;
+/* ===== Warning Banner ===== */
+.warning-banner {
+    background-color: #d9534f; /* Red alert color */
     color: white;
-    padding: 60px 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* ===== Header Styling ===== */
+header {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
 }
 
 h1 {
     font-size: 2.5em;
 }
 
+/* ===== Call-to-Action Buttons ===== */
 .cta-button {
     display: inline-block;
-    background: #28a745;
+    background: linear-gradient(45deg, #28a745, #218838);
     color: white;
-    padding: 12px 20px;
+    padding: 15px 25px;
     margin-top: 15px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button:hover {
-    background: #218838;
+    background: linear-gradient(45deg, #218838, #1e7e34);
+    transform: scale(1.05);
 }
 
-/* Sections */
+/* ===== Section Styling ===== */
 .info-section, .contact-section {
     background: white;
     padding: 40px 20px;
@@ -49,17 +69,33 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-ul {
+/* ===== HAE Symptoms List (Uses Warning Icon) ===== */
+.hae-symptoms {
     list-style-type: none;
     padding: 0;
 }
 
-li {
+.hae-symptoms li {
     font-size: 1.2em;
     margin: 10px 0;
+    color: #d9534f; /* Red warning color */
+    font-weight: bold;
 }
 
-/* Contact Form */
+/* ===== Haensgrada Benefits List (Uses Check Icon) ===== */
+.haensgrada-benefits {
+    list-style-type: none;
+    padding: 0;
+}
+
+.haensgrada-benefits li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #28a745; /* Green color for positive benefits */
+    font-weight: bold;
+}
+
+/* ===== Contact Form ===== */
 form {
     display: flex;
     flex-direction: column;
@@ -86,10 +122,23 @@ button:hover {
     background: #0056b3;
 }
 
-/* Footer */
+/* ===== Footer ===== */
 footer {
     background: #333;
     color: white;
     padding: 20px 0;
     margin-top: 20px;
+}
+
+/* ===== Responsive Design (For Mobile & Tablet Views) ===== */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .cta-button {
+        padding: 12px 20px;
+    }
 }
