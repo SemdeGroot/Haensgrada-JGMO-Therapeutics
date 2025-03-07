@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-/* ===== Responsive Warning Banner Fix ===== */
+/* ===== Warning Banner ===== */
 .warning-banner {
     background-color: #d9534f; /* Red alert color */
     color: white;
@@ -16,19 +16,26 @@ body {
     font-weight: bold;
     padding: 10px 15px;
     font-size: 1em;
-    width: 100%;
-    box-sizing: border-box; /* Ensures proper width calculation */
-    position: relative; /* Scrolls with page */
-    word-wrap: break-word; /* Ensures text wraps */
+    width: 100%; 
+    box-sizing: border-box; 
+    position: relative; 
 }
 
-/* Make sure the text fits smaller screens */
+/* Match banner width to container */
+.warning-banner .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Adjust banner for smaller screens */
 @media (max-width: 480px) {
     .warning-banner {
-        font-size: 0.9em; /* Slightly smaller text */
-        padding: 10px; /* Adjust padding */
+        font-size: 0.9em;
+        padding: 8px;
     }
 }
+
 
 /* ===== Header Styling ===== */
 header {
@@ -67,7 +74,7 @@ h1 {
     border-radius: 5px;
 }
 
-/* ===== Fix: Remove default bullet points ===== */
+
 .hae-symptoms, .haensgrada-benefits {
     list-style: none;
     padding: 0;
@@ -116,3 +123,29 @@ footer {
         padding: 12px 20px;
     }
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+
+.warning-banner {
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 10px 15px;
+}
+
+.info-section, .contact-section, header {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
