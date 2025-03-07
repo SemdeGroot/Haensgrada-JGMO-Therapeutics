@@ -8,16 +8,26 @@ body {
     color: #333;
 }
 
-/* ===== Warning Banner (Now scrolls with page) ===== */
+/* ===== Responsive Warning Banner Fix ===== */
 .warning-banner {
     background-color: #d9534f; /* Red alert color */
     color: white;
     text-align: center;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px 15px;
     font-size: 1em;
     width: 100%;
-    position: relative; /* No longer fixed */
+    box-sizing: border-box; /* Ensures proper width calculation */
+    position: relative; /* Scrolls with page */
+    word-wrap: break-word; /* Ensures text wraps */
+}
+
+/* Make sure the text fits smaller screens */
+@media (max-width: 480px) {
+    .warning-banner {
+        font-size: 0.9em; /* Slightly smaller text */
+        padding: 10px; /* Adjust padding */
+    }
 }
 
 /* ===== Header Styling ===== */
