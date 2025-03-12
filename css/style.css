@@ -97,24 +97,30 @@ h1 {
     color: white;
 }
 
-/* ===== Pipeline Table: Nog kleiner maken zodat het schermvullend blijft op mobiel ===== */
+/* ===== Extra kleine Pipeline-tabel voor mobiel ===== */
 @media (max-width: 768px) {
     .pipeline-table {
-        display: table; /* Zorgt ervoor dat de tabel altijd als tabel blijft */
-        width: 100%; /* Zorgt dat de tabel het volledige scherm vult */
-        font-size: 10px; /* Nog iets kleiner lettertype voor betere pasvorm */
-        margin: 0; /* Verwijder eventuele centrering */
+        display: table;
+        width: 100%; /* Zorgt dat de tabel het hele scherm gebruikt */
+        font-size: 9px; /* Verklein lettertype nog meer */
+        margin: 0;
+        table-layout: fixed; /* Forceert dat de tabel binnen de breedte blijft */
     }
 
     .pipeline-table th, 
     .pipeline-table td {
-        display: table-cell; /* Zorgt ervoor dat de cellen naast elkaar blijven */
-        padding: 4px; /* Nog minder padding om de tabel compacter te maken */
+        display: table-cell;
+        padding: 3px; /* Nog minder padding voor compactere weergave */
         text-align: center;
+        word-wrap: break-word; /* Zorgt dat tekst niet uitloopt */
     }
 
     .pipeline-table th {
-        font-size: 11px; /* Headers iets kleiner zodat ze niet te breed worden */
+        font-size: 10px; /* Headers iets kleiner */
+    }
+
+    .pipeline-table td {
+        font-size: 9px; /* Maak de tekst kleiner */
     }
 }
 
