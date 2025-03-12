@@ -79,31 +79,51 @@ h1 {
     padding: 0;
 }
 
-/* ===== Contact Form ===== */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/* ===== Pipeline Table ===== */
+.pipeline-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-input, textarea {
+.pipeline-table th, .pipeline-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.pipeline-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* ===== Forms Styling (Adverse Event) ===== */
+#adverseEventForm {
+    margin-top: 20px;
+}
+
+#adverseEventForm input, 
+#adverseEventForm textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
-button {
+#adverseEventForm button {
     padding: 10px 15px;
     background: #007bff;
     color: white;
     border: none;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 
-button:hover {
+#adverseEventForm button:hover {
     background: #0056b3;
 }
+
 
 /* ===== Footer ===== */
 footer {

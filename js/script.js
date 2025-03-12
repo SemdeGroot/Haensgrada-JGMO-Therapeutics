@@ -1,16 +1,17 @@
-document.getElementById("contactForm").addEventListener("submit", function(event) {
+// Handle Adverse Event Form Submission
+document.getElementById("adverseEventForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
+    let reporterName = document.getElementById("reporter-name").value;
+    let reporterEmail = document.getElementById("reporter-email").value;
+    let eventDetails = document.getElementById("event-details").value;
 
-    if (name && email && message) {
-        document.getElementById("formMessage").innerText = "Thank you! We will get back to you soon.";
-        document.getElementById("formMessage").style.color = "green";
+    if (reporterName && reporterEmail && eventDetails) {
+        document.getElementById("eventMessage").innerText = "Your report has been submitted successfully. Thank you!";
+        document.getElementById("eventMessage").style.color = "green";
         this.reset();
     } else {
-        document.getElementById("formMessage").innerText = "Please fill out all fields.";
-        document.getElementById("formMessage").style.color = "red";
+        document.getElementById("eventMessage").innerText = "Please fill out all fields.";
+        document.getElementById("eventMessage").style.color = "red";
     }
 });
