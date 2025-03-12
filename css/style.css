@@ -121,23 +121,45 @@ h1 {
     color: white;
 }
 
-/* ===== Mobiele Aanpassingen ===== */
+/* ===== Responsive Pipeline Table (Stacked Layout for Mobile) ===== */
 @media (max-width: 768px) {
-    .pipeline-container {
+    .pipeline-table, .pipeline-table thead, .pipeline-table tbody, .pipeline-table th, .pipeline-table td, .pipeline-table tr {
         display: block;
-        overflow-x: auto;
-    }
-
-    .pipeline-table {
         width: 100%;
-        display: block;
     }
 
-    .pipeline-table th, .pipeline-table td {
-        font-size: 12px; /* Kleinere tekst voor betere leesbaarheid */
-        padding: 8px;
+    .pipeline-table thead {
+        display: none; /* Verberg de headers op mobiel */
+    }
+
+    .pipeline-table tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background: white;
+        border-radius: 5px;
+    }
+
+    .pipeline-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 14px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .pipeline-table td:last-child {
+        border-bottom: none;
+    }
+
+    .pipeline-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #007bff;
     }
 }
+
 
 
 /* ===== Forms Styling (Adverse Event) ===== */

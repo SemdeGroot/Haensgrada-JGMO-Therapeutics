@@ -57,8 +57,8 @@
         <div class="container">
             <h2>Pipeline</h2>
             <p>Our innovative research pipeline focuses on advancing treatments for hereditary angioedema and other rare diseases.</p>
-            <div class="pipeline-container"> <!-- Scrollbare container toegevoegd -->
-                <table class="pipeline-table">
+            <table class="pipeline-table">
+                <thead>
                     <tr>
                         <th>Product</th>
                         <th>Preclinical</th>
@@ -67,18 +67,21 @@
                         <th>Phase 3</th>
                         <th>Approval</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
-                        <td>Haensgrada</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
-                        <td>✔️</td>
+                        <td data-label="Product">Haensgrada</td>
+                        <td data-label="Preclinical">✔️</td>
+                        <td data-label="Phase 1">✔️</td>
+                        <td data-label="Phase 2">✔️</td>
+                        <td data-label="Phase 3">⬤</td>
+                        <td data-label="Approval"></td>
                     </tr>
-                </table>
-            </div>
+                </tbody>
+            </table>
         </div>
     </section>
+    
     
 
 <section id="adverse-event" class="info-section" data-aos="fade-left">
