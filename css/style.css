@@ -97,23 +97,24 @@ h1 {
     color: white;
 }
 
-/* ===== Pipeline Table: Maak kleiner op mobiel zonder layout te veranderen ===== */
+/* ===== Pipeline Table: Maak kleiner op mobiel zonder structuur te veranderen ===== */
 @media (max-width: 768px) {
     .pipeline-table {
-        transform: scale(0.85); /* Schaal de hele tabel iets kleiner */
-        transform-origin: center; /* Houd de schaalverkleining gecentreerd */
+        width: 90%; /* Maak de tabel iets smaller */
+        font-size: 12px; /* Kleiner lettertype om beter te passen */
+        margin: 0 auto; /* Centreer de tabel */
     }
 
     .pipeline-table th, 
     .pipeline-table td {
-        font-size: 12px; /* Kleiner lettertype voor betere pasvorm */
-        padding: 5px; /* Minder padding om de tabel compacter te maken */
+        padding: 6px; /* Minder padding voor compacte weergave */
     }
 
     .pipeline-table th {
-        font-size: 13px; /* Headers iets groter voor leesbaarheid */
+        font-size: 13px; /* Maak headers iets groter voor leesbaarheid */
     }
 }
+
 
 
 
