@@ -97,69 +97,26 @@ h1 {
     color: white;
 }
 
-/* ===== Responsive Pipeline Table ===== */
-.pipeline-container {
-    overflow-x: auto; /* Maak de tabel scrollbaar op kleinere schermen */
-    -webkit-overflow-scrolling: touch; /* Vloeiend scrollen op mobiel */
-}
-
-.pipeline-table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 600px; /* Voorkomt dat de kolommen te smal worden */
-}
-
-.pipeline-table th, .pipeline-table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
-}
-
-.pipeline-table th {
-    background-color: #007bff;
-    color: white;
-}
-
-/* ===== Responsive Pipeline Table (Stacked Layout for Mobile) ===== */
+/* ===== Responsive Pipeline Table (Kleiner maken voor mobiel) ===== */
 @media (max-width: 768px) {
-    .pipeline-table, .pipeline-table thead, .pipeline-table tbody, .pipeline-table th, .pipeline-table td, .pipeline-table tr {
-        display: block;
+    .pipeline-table {
         width: 100%;
+        font-size: 12px; /* Kleiner lettertype voor betere pasvorm */
     }
 
-    .pipeline-table thead {
-        display: none; /* Verberg de headers op mobiel */
+    .pipeline-table th, 
+    .pipeline-table td {
+        padding: 6px; /* Minder padding om ruimte te besparen */
     }
 
-    .pipeline-table tr {
-        margin-bottom: 10px;
-        border: 1px solid #ddd;
-        padding: 10px;
-        background: white;
-        border-radius: 5px;
+    .pipeline-table th {
+        font-size: 13px; /* Headers iets groter voor leesbaarheid */
     }
 
     .pipeline-table td {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        font-size: 14px;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .pipeline-table td:last-child {
-        border-bottom: none;
-    }
-
-    .pipeline-table td::before {
-        content: attr(data-label);
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #007bff;
+        font-size: 12px; /* Data iets kleiner voor betere pasvorm */
     }
 }
-
 
 
 /* ===== Forms Styling (Adverse Event) ===== */
@@ -188,7 +145,6 @@ h1 {
 #adverseEventForm button:hover {
     background: #0056b3;
 }
-
 
 
 /* ===== Footer ===== */
